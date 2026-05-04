@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Rating App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Rating App</h1>
+        <form id="rating-form">
+            <input type="text" id="food-type" placeholder="Food Type" required>
+            <input type="text" id="variety-name" placeholder="Variety Name" required>
+            <input type="number" id="taste" placeholder="Taste Rating (1-10)" min="1" max="10" required>
+            <input type="number" id="texture" placeholder="Texture Rating (1-10)" min="1" max="10" required>
+            <input type="number" id="appearance" placeholder="Appearance Rating (1-10)" min="1" max="10" required>
+            <input type="number" id="price" placeholder="Price Rating (1-10)" min="1" max="10" required>
+            <input type="text" id="location" placeholder="Location Purchased" required>
+            <textarea id="notes" placeholder="Additional Notes"></textarea>
+            <button type="submit">Submit Rating</button>
+        </form>
+        <h2>Food Ratings</h2>
+        <ul id="food-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
